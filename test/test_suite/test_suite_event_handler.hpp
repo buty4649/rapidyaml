@@ -371,7 +371,7 @@ public:
         {
             _RYML_CB_ASSERT(m_stack.m_callbacks, (m_stack.size() == 1u) ? (docpos >= 5u) : (docpos == 0u));
             _RYML_CB_ASSERT(m_stack.m_callbacks, docpos + 5u < full.len);
-            sink.insert("+MAP\n", docpos + 5u);
+            sink.insert("+MAP actually_val_is_first_key_of_new_map_block\n", docpos + 5u);
         }
         else
         {
